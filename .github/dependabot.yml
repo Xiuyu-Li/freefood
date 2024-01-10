@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/Backend/src"
+  schedule:
+    interval: monthly
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cffi
+    versions:
+    - 1.14.4
